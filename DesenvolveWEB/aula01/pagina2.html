@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Como a Web Funciona</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particles"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="glow">Como a Web Funciona</h1>
+            <p>Uma introdução moderna e visual sobre a web</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-item">Início</a>
+            <a href="pagina3.html" class="nav-item">Página 3</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>🌐 O que é a Web?</h2>
+                <p>
+                    A web é um sistema de páginas conectadas por links, acessadas via navegadores.
+                    É como uma rede gigante de informações interligadas.
+                </p>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>📌 Cabeçalhos HTML</h2>
+                <p>
+                    Os cabeçalhos organizam o conteúdo e ajudam na leitura e no SEO.
+                </p>
+
+                <pre class="code-box">
+&lt;h1&gt;Cabeçalho H1&lt;/h1&gt;
+&lt;h2&gt;Cabeçalho H2&lt;/h2&gt;
+&lt;h3&gt;Cabeçalho H3&lt;/h3&gt;
+&lt;h4&gt;Cabeçalho H4&lt;/h4&gt;
+&lt;h5&gt;Cabeçalho H5&lt;/h5&gt;
+&lt;h6&gt;Cabeçalho H6&lt;/h6&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>⚙️ Como funciona?</h2>
+
+                <ul class="steps">
+                    <li>🌍 Você digita o site</li>
+                    <li>📡 O navegador envia a requisição</li>
+                    <li>🖥️ O servidor responde</li>
+                    <li>🎨 O navegador monta a página</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="container">
+                <h2>❓ Perguntas Frequentes</h2>
+
+                <div class="faq-item">
+                    <h3>O que é HTML?</h3>
+                    <p>Estrutura da página.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>O que é CSS?</h3>
+                    <p>Estilo e design.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>O que é JavaScript?</h3>
+                    <p>Interatividade e lógica.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; feito por Josué - DS Noturno</p>
+            <img src="imagens/maxresdefault.jpg" class="logo-footer">
+        </div>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if(top < window.innerHeight - 100){
+                    el.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Desenvolvimento Web</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<header>
+    <div class="container">
+        <h1 class="glow">Desenvolvimento Web</h1>
+        <p>Guia completo pra começar no mundo da programação</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="index.html" class="nav-item">Início</a>
+        <a href="pagina2.html" class="nav-item">Página 2</a>
+    </div>
+</nav>
+
+<main>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>🚀 Como começar?</h2>
+        <ul class="steps">
+            <li>📄 HTML - Estrutura</li>
+            <li>🎨 CSS - Estilo</li>
+            <li>⚡ JavaScript - Interatividade</li>
+            <li>📱 Responsividade</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>📚 Recursos</h2>
+        <ul class="links-list">
+            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Docs</a></li>
+            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>📊 Comparação</h2>
+        <table class="table">
+            <tr>
+                <th>Tecnologia</th>
+                <th>Função</th>
+                <th>Uso</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Estrutura</td>
+                <td>Conteúdo</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Design</td>
+                <td>Estilo</td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td>Interação</td>
+                <td>Lógica</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>💻 Exemplo</h2>
+        <img src="imagens/Me agradeça depois vulgo Jojo.png" class="img-site">
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>📌 Boas práticas</h2>
+        <ul class="steps">
+            <li>✔ Use HTML semântico</li>
+            <li>✔ Comente o código</li>
+            <li>✔ Otimize imagens</li>
+            <li>✔ Teste em vários navegadores</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>💬 Depoimentos</h2>
+
+        <div class="testimonial">
+            <p>"Mudou minha vida!"</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Nunca desista!"</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>🔥 Bora começar?</h2>
+        <a href="https://www.freecodecamp.org/" target="_blank" class="cta-btn">Começar Agora</a>
+    </div>
+</section>
+
+<section class="section reveal contact-form">
+    <div class="container">
+        <h2>📩 Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Mensagem"></textarea>
+            <button class="cta-btn">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+        <h2>🌎 Redes</h2>
+        <div class="social-icons">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>&copy; feito por Josué</p>
+        <img src="imagens/maxresdefault.jpg" class="logo-footer">
+    </div>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+
+window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

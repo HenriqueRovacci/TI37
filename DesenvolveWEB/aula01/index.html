@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Site Profissional</title>
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Partículas no fundo -->
+    <div class="particles"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="glow">Meu Site</h1>
+            <p>Projeto desenvolvido para aprendizado em Desenvolvimento de Sistemas</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-item">Início</a>
+            <a href="pagina2.html" class="nav-item">Página 2</a>
+            <a href="pagina3.html" class="nav-item">Página 3</a>
+            <a href="https://www.sp.senac.br/senac-botucatu" target="_blank" class="nav-item">Senac</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero reveal">
+            <div class="container">
+                <h2>Bem-vindo ao meu site!</h2>
+                <p>Interface moderna com animações suaves e design profissional.</p>
+                <a href="pagina2.html" class="btn">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section class="card reveal">
+            <div class="container">
+                <h2>Sobre o Projeto</h2>
+                <p>
+                    Projeto focado em evolução no desenvolvimento web,
+                    com foco em design moderno, animações e experiência do usuário.
+                </p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="container">
+
+                <div class="card-item reveal">
+                    <h3>HTML5</h3>
+                    <p>Estrutura moderna e semântica.</p>
+                </div>
+
+                <div class="card-item reveal">
+                    <h3>CSS3</h3>
+                    <p>Animações e design avançado.</p>
+                </div>
+
+                <div class="card-item reveal">
+                    <h3>Responsivo</h3>
+                    <p>Funciona em qualquer tela.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+<footer>
+    <div class="container footer-content">
+        <p>&copy; feito por Josué - DS Noturno</p>
+        <img src="imagens/maxresdefault.jpg" alt="Logo" class="logo-footer">
+    </div>
+</footer>
+
+    <!-- Script animação scroll -->
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if(top < window.innerHeight - 100){
+                    el.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
